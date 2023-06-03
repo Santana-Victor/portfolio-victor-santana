@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/imagens/icon-purple.png" type="image/png">
+    <meta name="author" content="Victor Santana">
+    <meta name="description" content="Portfólio online de Victor Santana, desenvoldedor front-end com habilidades em HTML, CSS e Javascript.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <title>Portfólio | Victor Santana - Desenvolvedor Front-end</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <button id="botao-alterar-tema" aria-label="Botão para alternar entre tema escuro e claro">
+            <i class="fa-solid fa-sun icones" id="imagem-botao"></i>
+        </button>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#secao-habilidades">Habilidades</a></li>
+                <li><a href="#secao-projetos">Projetos</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="icones-contato">
+                <li>
+                    <a href="https://github.com/santana-victor" aria-label="Link para Github"
+                    target="_blank">
+                        <i class="fa-brands fa-square-github icones"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Link para Linkedin">
+                        <i class="fa-brands fa-linkedin icones"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="nav">
+            <button id="botao-menu-mobile" aria-label="Botão para abrir e fechar o menu mobile">
+                <i class="fa-solid fa-bars icone-botao" id="hamburger"></i>
+            </button>
+            <ul id="menu-mobile">
+                <li><a href="#" class="links-mobile">Home</a></li>
+                <li><a href="#secao-habilidades" class="links-mobile">Habilidades</a></li>
+                <li><a href="#secao-projetos" class="links-mobile">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteiner">
+        <div class="inicio">
+            <h1 class="titulo">Olá, eu sou <br> <span class="nome">Victor Santana</span> <br>
+            Densenvolvedor <br> Front-end</h1>
+            <div class="imagem-programando">
+                <img src="./src/imagens/programando.gif" width="480" height="360" loading="lazy" alt="programando"/>
+            </div>
+        </div>
+        <section id="secao-sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Apaixonado por tecnologia, tomei como objetivo trabalhar nessa área mas não tive
+            oportunidades, até que encontrei um curso gratuito de introdução ao Densenvolvimento
+            Front-end, desde então venho me aprimorando em busca de ingressar na área e trabalhar
+            com o que amo.</p>
+        </section>
+        <section id="secao-habilidades">
+            <h2>Habilidades</h2>
+            <div>
+                <i class="fa-brands fa-html5 icones"></i>
+                <i class="fa-brands fa-css3-alt icones"></i>
+                <i class="fa-brands fa-square-js icones"></i>
+            </div>
+        </section>
+        <section id="secao-projetos">
+            <h2>Projetos</h2>
+        </section>
+    </main>
+    <button id="botao-topo" aria-label="Botão para voltar ao topo do site">
+        <i class="fa-solid fa-circle-up"></i>
+    </button>
+    <footer class="rodape" id="contato">
+        <nav>
+            <ul class="icones-contato">
+                <li>
+                    <a href="https://github.com/santana-victor" aria-label="Link para Github"
+                    target="_blank">
+                        <i class="fa-brands fa-square-github icones"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Link para Linkedin">
+                        <i class="fa-brands fa-linkedin icones"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <span class="copy">© 2023 - Todos os direitos reservados.</span>
+    </footer>
+    <script src="./src/js/main.js" type="module"></script>
+</body>
+</html>

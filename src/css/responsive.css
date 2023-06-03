@@ -1,0 +1,138 @@
+@media (max-width: 1280px) {
+    .cabecalho {
+        padding: 2rem 0;
+    }
+    .imagem-programando {
+        width: 40rem;
+    }
+    .rodape {
+        padding: 3rem 10rem;
+    }
+}
+@media (max-width: 1024px) {
+    .inicio {
+        gap: 6rem;
+    }
+}
+@media (max-width: 768px) {
+    .cabecalho {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
+    .icones-contato {
+        display: none;
+    }
+    #nav {
+        display: block;
+    }
+    #botao-menu-mobile {
+        border: none;
+    }
+    .icone-botao {
+        font-size: 3.5rem;
+        background-color: #363636;
+        color: #A7A6A6;
+    }
+    #menu-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #363636;
+        position: absolute;
+        z-index: 4;
+        width: 40%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.aberto #menu-mobile {
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #botao-menu-mobile {
+        position: relative;
+        z-index: 6;
+    }
+    #menu-mobile a {
+        color: #ffffff;
+        font-size: 1.8rem;
+    }
+    .conteiner {
+        gap: 7rem;
+        padding: 15rem 0 9rem 0;
+    }
+    .inicio {
+        flex-direction: column;
+    }
+    .inicio .titulo {
+        font-size: 3rem;
+    }
+    .inicio .nome {
+        font-size: 3.5rem;
+    }
+    #botao-topo {
+        bottom: 1rem;
+        right: 0.5rem;
+        font-size: 4rem;
+    }
+    .rodape {
+        padding: 3rem 7rem;
+    }
+    .rodape .icones-contato {
+        display: flex;
+    }
+}
+@media (max-width: 480px) {
+    #menu-mobile {
+        width: 100%;
+    }
+    .imagem-programando {
+        display: none;
+    }
+    .conteiner section {
+        padding: 3rem 1rem;
+    }
+    #secao-sobre-mim p {
+        width: 32rem;
+        font-size: 1.6rem;
+    }
+    .rodape {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 2rem;
+    }
+    .copy {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 320px) {
+    .inicio .titulo {
+        font-size: 2.5rem;
+    }
+    .inicio .nome {
+        font-size: 3rem;
+    }
+    .conteiner section {
+        padding: 3rem 0;
+    }
+    #secao-sobre-mim p {
+        width: 28rem;
+    }
+    #botao-topo {
+        bottom: 1rem;
+        right: -0.5rem;
+        font-size: 3rem;
+    }
+}
